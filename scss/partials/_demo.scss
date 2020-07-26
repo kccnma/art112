@@ -1,0 +1,72 @@
+
+/* ------------------------ */
+/* ------------------------ */
+/* ------------------------ */
+
+
+/* FOR LAYOUT DEMO PURPOSES ONLY */
+
+.demo .column {
+    background: #ccc;
+    padding: .5em;
+    text-align: center;
+}
+
+.demo .column p {
+    max-width: none;
+}
+
+/* FOR SMALL-SIZED SCREENS (and Larger) */
+body.demo::before {
+    content: "Small Screen (0 - 767px)";
+    display: block;
+    background: red; 
+    color: white;
+    text-align: center;
+    padding: .2em;
+    font-size: .8em;
+}
+
+/* FOR MID-SIZED SCREENS/TABLETS (and Larger) */
+@media (min-width:768px) {
+    body.demo::before { 
+        content: "Mid Screen (768px - 999px)";
+        background: blue; 
+    }
+}
+
+/* FOR LARGE-SIZED SCREENS/LAPTOPS (and Larger) */
+@media (min-width:1000px) {
+    body.demo::before { 
+        content: "Large Screen (1000px - 1199px)";
+        background: green; 
+    }
+}
+
+/* FOR EXTRA-LARGE-SIZED SCREENS/DESKTOP MONITORS (and Larger) */
+@media (min-width:1200px) {
+    body.demo::before { 
+        content: "EX-Larger Screen (1200px + )";
+        background: teal;}
+    }
+
+
+/* FOR DEV TESTING ONLY */
+
+/* * {
+    background-color: rgba(255,0,0,.2);
+    color: rgba(255,0,0,.3);
+    box-shadow: 0 0 0 3px inset rgba(255,0,0,1);
+}
+.site-header { 
+    background-color: rgba(0,255,0,.4);
+    box-shadow: 0 0 0 3px inset rgba(0,255,0,1);
+}
+.site-main { 
+    background-color: rgba(0,0,255,.4);
+    box-shadow: 0 0 0 3px inset rgba(0,0,255,1);
+}
+.site-footer { 
+    background-color: rgba(255, 255, 0, 0.4);
+    box-shadow: 0 0 0 3px inset rgba(255,255,0,1);
+} */
