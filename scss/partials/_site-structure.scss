@@ -43,34 +43,59 @@
 
 
 /* SITE ID (LOGO) */
-.site-id h1 {
-    font-size: 1.5em;
-    margin: 0;
-    text-align: center;
-    font-weight: 300;
-}
+.site-id {
 
-.site-id a {
-    display: inline-block;
-    padding: .25em 0;
-    font-weight: 700;
-}
+    .logo {
+        padding: 1em;
+    }
 
+    img {
+        max-width: 100%;
+        height: auto;
+        transition: all 0.5s ease;
+    }
+
+    @media (max-width: 767px) {
+        width: 90px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        font-size: 12vw;
+        margin: 0;
+        text-align: center;
+        font-weight: 300;
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    a {
+        display: inline-block;
+        padding: .25em 0;
+        font-weight: 700;
+    }
+
+}
 /* SITE NAV (Primary Top Nav) */
-.site-nav ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: .5em 0 0 0;
-    padding: 0;
-}
-.site-nav li {
-    list-style: none;
-}
+.site-nav {
 
-.site-nav a {
-    display: block;
-    padding: .5em 1em;
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: .5em 0 0 0;
+        padding: 0;
+    }
+    li {
+        list-style: none;
+    }
+
+    a {
+        display: block;
+        padding: .5em 1em;
+    }
+
 }
 
 /* MENU BUTTON */
@@ -111,7 +136,7 @@
     .toggle-nav .site-nav ul {
         position: absolute;
         left: -9999px;
-        margin-top: 1em;
+        margin-top: 4em;
     }
 
     /* SHOW NAV ON SMALL SCREENS WHEN EXPANDED CLASS IS TOGGLED */
